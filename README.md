@@ -1,4 +1,9 @@
-# ItaAngularIntro
+
+## Vulnerabilities
+
+This repository uses angular v16. Most vulnerabilities are fixed by updating to version 20 or 21, but since it is a class assignment I want to keep v16.
+
+## Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 

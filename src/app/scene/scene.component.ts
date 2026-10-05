@@ -16,7 +16,7 @@ import { Scene } from '../home/home.component';
             </button>
 
             <div class="px-6">
-                <p *ngFor="let phrase of phrases; let i = index" 
+                <p *ngFor="let phrase of phrases; let i = index"
                     class="text-center border border-black rounded-pill border-2 p-2 mt-2"
                     [class.active]="currentSentence == i">
                     {{ phrase.txt }}
@@ -33,7 +33,7 @@ export class SceneComponent implements OnInit{
     @Input() phrases: Scene[] = [];
     @HostBinding('style.background-image')
     backgroundImage = '';
-    
+
     ngOnInit(): void {
         this.lastSentence = this.phrases.length - 1;
 
@@ -63,7 +63,7 @@ export class SceneComponent implements OnInit{
 
     private setImage = () => {
         const img = this.phrases[this.currentSentence].img;
-        
-        this.backgroundImage = 'url("/assets/img/' + img + '")'
+
+        this.backgroundImage = 'url("assets/img/' + img + '")'
     }
 }
